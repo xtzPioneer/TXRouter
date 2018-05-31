@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5556AD7020BEA55C007C8C10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556AD6F20BEA55C007C8C10 /* AppDelegate.m */; };
+		5556AD7620BEA55C007C8C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5556AD7420BEA55C007C8C10 /* Main.storyboard */; };
+		5556AD7820BEA55E007C8C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5556AD7720BEA55E007C8C10 /* Assets.xcassets */; };
+		5556AD7B20BEA55E007C8C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5556AD7920BEA55E007C8C10 /* LaunchScreen.storyboard */; };
+		5556AD7E20BEA55E007C8C10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556AD7D20BEA55E007C8C10 /* main.m */; };
+		5556AD8820BEA55E007C8C10 /* TXRouterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556AD8720BEA55E007C8C10 /* TXRouterDemoTests.m */; };
+		5556AD9320BEA55E007C8C10 /* TXRouterDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556AD9220BEA55E007C8C10 /* TXRouterDemoUITests.m */; };
+		5556ADA320BEA597007C8C10 /* TXRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556ADA220BEA597007C8C10 /* TXRouter.m */; };
+		5556ADAF20BEA5B9007C8C10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556ADA920BEA5B9007C8C10 /* ViewController.m */; };
+		6C2ACF8BA56EA53CD17F96E1 /* libPods-TXRouterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0897BE7A841E3F83397955C4 /* libPods-TXRouterDemo.a */; };
+		9719100D344314BD1AB762B1 /* libPods-TXRouterDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7B9BE2689A200DC4911A5 /* libPods-TXRouterDemoUITests.a */; };
+		C0B1AC7A8FCBBAC8A03483FB /* libPods-TXRouterDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD45905C6DFAE13C496A456 /* libPods-TXRouterDemoTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5556AD8420BEA55E007C8C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5556AD6320BEA55C007C8C10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5556AD6A20BEA55C007C8C10;
+			remoteInfo = TXRouterDemo;
+		};
+		5556AD8F20BEA55E007C8C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5556AD6320BEA55C007C8C10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5556AD6A20BEA55C007C8C10;
+			remoteInfo = TXRouterDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0897BE7A841E3F83397955C4 /* libPods-TXRouterDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TXRouterDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD45905C6DFAE13C496A456 /* libPods-TXRouterDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TXRouterDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3B99C55342CDA910089AFA /* Pods-TXRouterDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXRouterDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TXRouterDemoTests/Pods-TXRouterDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A581831E8DCD62667A6D7C6 /* Pods-TXRouterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXRouterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TXRouterDemo/Pods-TXRouterDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5556AD6B20BEA55C007C8C10 /* TXRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5556AD6E20BEA55C007C8C10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5556AD6F20BEA55C007C8C10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5556AD7520BEA55C007C8C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5556AD7720BEA55E007C8C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5556AD7A20BEA55E007C8C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5556AD7C20BEA55E007C8C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5556AD7D20BEA55E007C8C10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5556AD8320BEA55E007C8C10 /* TXRouterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXRouterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5556AD8720BEA55E007C8C10 /* TXRouterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXRouterDemoTests.m; sourceTree = "<group>"; };
+		5556AD8920BEA55E007C8C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5556AD8E20BEA55E007C8C10 /* TXRouterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXRouterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5556AD9220BEA55E007C8C10 /* TXRouterDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXRouterDemoUITests.m; sourceTree = "<group>"; };
+		5556AD9420BEA55E007C8C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5556ADA120BEA597007C8C10 /* TXRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXRouter.h; sourceTree = "<group>"; };
+		5556ADA220BEA597007C8C10 /* TXRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXRouter.m; sourceTree = "<group>"; };
+		5556ADA920BEA5B9007C8C10 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5556ADAD20BEA5B9007C8C10 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5767491BDE55A96CC77661F5 /* Pods-TXRouterDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXRouterDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TXRouterDemoUITests/Pods-TXRouterDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7E508B7F265FC05C649D12BC /* Pods-TXRouterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXRouterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TXRouterDemo/Pods-TXRouterDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AABE208BE689B4D286668CEB /* Pods-TXRouterDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXRouterDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TXRouterDemoTests/Pods-TXRouterDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		AFC7B9BE2689A200DC4911A5 /* libPods-TXRouterDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TXRouterDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D137B163C5C3F0F9BCE063 /* Pods-TXRouterDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXRouterDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TXRouterDemoUITests/Pods-TXRouterDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5556AD6820BEA55C007C8C10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2ACF8BA56EA53CD17F96E1 /* libPods-TXRouterDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5556AD8020BEA55E007C8C10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B1AC7A8FCBBAC8A03483FB /* libPods-TXRouterDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5556AD8B20BEA55E007C8C10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9719100D344314BD1AB762B1 /* libPods-TXRouterDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5556AD6220BEA55C007C8C10 = {
+			isa = PBXGroup;
+			children = (
+				5556ADA020BEA597007C8C10 /* TXRouter */,
+				5556AD6D20BEA55C007C8C10 /* TXRouterDemo */,
+				5556AD8620BEA55E007C8C10 /* TXRouterDemoTests */,
+				5556AD9120BEA55E007C8C10 /* TXRouterDemoUITests */,
+				5556AD6C20BEA55C007C8C10 /* Products */,
+				BEF12A0A3ED4DB31023DE38E /* Pods */,
+				8A349D5FB381F220B097A3BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5556AD6C20BEA55C007C8C10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5556AD6B20BEA55C007C8C10 /* TXRouterDemo.app */,
+				5556AD8320BEA55E007C8C10 /* TXRouterDemoTests.xctest */,
+				5556AD8E20BEA55E007C8C10 /* TXRouterDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5556AD6D20BEA55C007C8C10 /* TXRouterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5556AD6E20BEA55C007C8C10 /* AppDelegate.h */,
+				5556AD6F20BEA55C007C8C10 /* AppDelegate.m */,
+				5556ADAD20BEA5B9007C8C10 /* ViewController.h */,
+				5556ADA920BEA5B9007C8C10 /* ViewController.m */,
+				5556AD7420BEA55C007C8C10 /* Main.storyboard */,
+				5556AD7720BEA55E007C8C10 /* Assets.xcassets */,
+				5556AD7920BEA55E007C8C10 /* LaunchScreen.storyboard */,
+				5556AD7C20BEA55E007C8C10 /* Info.plist */,
+				5556AD7D20BEA55E007C8C10 /* main.m */,
+			);
+			path = TXRouterDemo;
+			sourceTree = "<group>";
+		};
+		5556AD8620BEA55E007C8C10 /* TXRouterDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5556AD8720BEA55E007C8C10 /* TXRouterDemoTests.m */,
+				5556AD8920BEA55E007C8C10 /* Info.plist */,
+			);
+			path = TXRouterDemoTests;
+			sourceTree = "<group>";
+		};
+		5556AD9120BEA55E007C8C10 /* TXRouterDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5556AD9220BEA55E007C8C10 /* TXRouterDemoUITests.m */,
+				5556AD9420BEA55E007C8C10 /* Info.plist */,
+			);
+			path = TXRouterDemoUITests;
+			sourceTree = "<group>";
+		};
+		5556ADA020BEA597007C8C10 /* TXRouter */ = {
+			isa = PBXGroup;
+			children = (
+				5556ADA120BEA597007C8C10 /* TXRouter.h */,
+				5556ADA220BEA597007C8C10 /* TXRouter.m */,
+			);
+			path = TXRouter;
+			sourceTree = "<group>";
+		};
+		8A349D5FB381F220B097A3BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0897BE7A841E3F83397955C4 /* libPods-TXRouterDemo.a */,
+				3AD45905C6DFAE13C496A456 /* libPods-TXRouterDemoTests.a */,
+				AFC7B9BE2689A200DC4911A5 /* libPods-TXRouterDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEF12A0A3ED4DB31023DE38E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A581831E8DCD62667A6D7C6 /* Pods-TXRouterDemo.debug.xcconfig */,
+				7E508B7F265FC05C649D12BC /* Pods-TXRouterDemo.release.xcconfig */,
+				3F3B99C55342CDA910089AFA /* Pods-TXRouterDemoTests.debug.xcconfig */,
+				AABE208BE689B4D286668CEB /* Pods-TXRouterDemoTests.release.xcconfig */,
+				D9D137B163C5C3F0F9BCE063 /* Pods-TXRouterDemoUITests.debug.xcconfig */,
+				5767491BDE55A96CC77661F5 /* Pods-TXRouterDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5556AD6A20BEA55C007C8C10 /* TXRouterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5556AD9720BEA55E007C8C10 /* Build configuration list for PBXNativeTarget "TXRouterDemo" */;
+			buildPhases = (
+				59143CDA03591E4A6DAEB076 /* [CP] Check Pods Manifest.lock */,
+				5556AD6720BEA55C007C8C10 /* Sources */,
+				5556AD6820BEA55C007C8C10 /* Frameworks */,
+				5556AD6920BEA55C007C8C10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TXRouterDemo;
+			productName = TXRouterDemo;
+			productReference = 5556AD6B20BEA55C007C8C10 /* TXRouterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5556AD8220BEA55E007C8C10 /* TXRouterDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5556AD9A20BEA55E007C8C10 /* Build configuration list for PBXNativeTarget "TXRouterDemoTests" */;
+			buildPhases = (
+				5BCD20692DABF4EE756C7020 /* [CP] Check Pods Manifest.lock */,
+				5556AD7F20BEA55E007C8C10 /* Sources */,
+				5556AD8020BEA55E007C8C10 /* Frameworks */,
+				5556AD8120BEA55E007C8C10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5556AD8520BEA55E007C8C10 /* PBXTargetDependency */,
+			);
+			name = TXRouterDemoTests;
+			productName = TXRouterDemoTests;
+			productReference = 5556AD8320BEA55E007C8C10 /* TXRouterDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5556AD8D20BEA55E007C8C10 /* TXRouterDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5556AD9D20BEA55E007C8C10 /* Build configuration list for PBXNativeTarget "TXRouterDemoUITests" */;
+			buildPhases = (
+				086E83A4321343FA07441662 /* [CP] Check Pods Manifest.lock */,
+				5556AD8A20BEA55E007C8C10 /* Sources */,
+				5556AD8B20BEA55E007C8C10 /* Frameworks */,
+				5556AD8C20BEA55E007C8C10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5556AD9020BEA55E007C8C10 /* PBXTargetDependency */,
+			);
+			name = TXRouterDemoUITests;
+			productName = TXRouterDemoUITests;
+			productReference = 5556AD8E20BEA55E007C8C10 /* TXRouterDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5556AD6320BEA55C007C8C10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = zhangxiong;
+				TargetAttributes = {
+					5556AD6A20BEA55C007C8C10 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					5556AD8220BEA55E007C8C10 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 5556AD6A20BEA55C007C8C10;
+					};
+					5556AD8D20BEA55E007C8C10 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 5556AD6A20BEA55C007C8C10;
+					};
+				};
+			};
+			buildConfigurationList = 5556AD6620BEA55C007C8C10 /* Build configuration list for PBXProject "TXRouterDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5556AD6220BEA55C007C8C10;
+			productRefGroup = 5556AD6C20BEA55C007C8C10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5556AD6A20BEA55C007C8C10 /* TXRouterDemo */,
+				5556AD8220BEA55E007C8C10 /* TXRouterDemoTests */,
+				5556AD8D20BEA55E007C8C10 /* TXRouterDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5556AD6920BEA55C007C8C10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5556AD7B20BEA55E007C8C10 /* LaunchScreen.storyboard in Resources */,
+				5556AD7820BEA55E007C8C10 /* Assets.xcassets in Resources */,
+				5556AD7620BEA55C007C8C10 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5556AD8120BEA55E007C8C10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5556AD8C20BEA55E007C8C10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		086E83A4321343FA07441662 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TXRouterDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59143CDA03591E4A6DAEB076 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TXRouterDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BCD20692DABF4EE756C7020 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TXRouterDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5556AD6720BEA55C007C8C10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5556AD7E20BEA55E007C8C10 /* main.m in Sources */,
+				5556ADA320BEA597007C8C10 /* TXRouter.m in Sources */,
+				5556AD7020BEA55C007C8C10 /* AppDelegate.m in Sources */,
+				5556ADAF20BEA5B9007C8C10 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5556AD7F20BEA55E007C8C10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5556AD8820BEA55E007C8C10 /* TXRouterDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5556AD8A20BEA55E007C8C10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5556AD9320BEA55E007C8C10 /* TXRouterDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5556AD8520BEA55E007C8C10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5556AD6A20BEA55C007C8C10 /* TXRouterDemo */;
+			targetProxy = 5556AD8420BEA55E007C8C10 /* PBXContainerItemProxy */;
+		};
+		5556AD9020BEA55E007C8C10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5556AD6A20BEA55C007C8C10 /* TXRouterDemo */;
+			targetProxy = 5556AD8F20BEA55E007C8C10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5556AD7420BEA55C007C8C10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5556AD7520BEA55C007C8C10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5556AD7920BEA55E007C8C10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5556AD7A20BEA55E007C8C10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5556AD9520BEA55E007C8C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5556AD9620BEA55E007C8C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5556AD9820BEA55E007C8C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A581831E8DCD62667A6D7C6 /* Pods-TXRouterDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSMJ24QAA8;
+				INFOPLIST_FILE = TXRouterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5556AD9920BEA55E007C8C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E508B7F265FC05C649D12BC /* Pods-TXRouterDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSMJ24QAA8;
+				INFOPLIST_FILE = TXRouterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5556AD9B20BEA55E007C8C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3B99C55342CDA910089AFA /* Pods-TXRouterDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSMJ24QAA8;
+				INFOPLIST_FILE = TXRouterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TXRouterDemo.app/TXRouterDemo";
+			};
+			name = Debug;
+		};
+		5556AD9C20BEA55E007C8C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AABE208BE689B4D286668CEB /* Pods-TXRouterDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSMJ24QAA8;
+				INFOPLIST_FILE = TXRouterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TXRouterDemo.app/TXRouterDemo";
+			};
+			name = Release;
+		};
+		5556AD9E20BEA55E007C8C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D137B163C5C3F0F9BCE063 /* Pods-TXRouterDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSMJ24QAA8;
+				INFOPLIST_FILE = TXRouterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TXRouterDemo;
+			};
+			name = Debug;
+		};
+		5556AD9F20BEA55E007C8C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5767491BDE55A96CC77661F5 /* Pods-TXRouterDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSMJ24QAA8;
+				INFOPLIST_FILE = TXRouterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TXRouterDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5556AD6620BEA55C007C8C10 /* Build configuration list for PBXProject "TXRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5556AD9520BEA55E007C8C10 /* Debug */,
+				5556AD9620BEA55E007C8C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5556AD9720BEA55E007C8C10 /* Build configuration list for PBXNativeTarget "TXRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5556AD9820BEA55E007C8C10 /* Debug */,
+				5556AD9920BEA55E007C8C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5556AD9A20BEA55E007C8C10 /* Build configuration list for PBXNativeTarget "TXRouterDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5556AD9B20BEA55E007C8C10 /* Debug */,
+				5556AD9C20BEA55E007C8C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5556AD9D20BEA55E007C8C10 /* Build configuration list for PBXNativeTarget "TXRouterDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5556AD9E20BEA55E007C8C10 /* Debug */,
+				5556AD9F20BEA55E007C8C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5556AD6320BEA55C007C8C10 /* Project object */;
+}

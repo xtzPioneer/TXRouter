@@ -1,0 +1,16 @@
+PODS:
+  - RouteProjectTest (1.0)
+
+DEPENDENCIES:
+  - RouteProjectTest (~> 1.0)
+
+SPEC REPOS:
+  https://gitee.com/xtzPioneer/RouteProjectTestSpec.git:
+    - RouteProjectTest
+
+SPEC CHECKSUMS:
+  RouteProjectTest: 6a3a6b7f16a197b45a1554307d023a33b861fad9
+
+PODFILE CHECKSUM: db27a024c310bfcdc6cd63efd0038963ca8c5db0
+
+COCOAPODS: 1.5.0
