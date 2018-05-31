@@ -147,9 +147,10 @@
     }
 }
 ```
-### 效果展示
-<br /> ![](https://github.com/xtzPioneer/TXRouter/raw/master/组件化管理工具.gif)
 ### 项目结构展示
 <br /> ![image](https://github.com/xtzPioneer/TXRouter/raw/master/项目结构图.png)
+### 效果展示
+<br /> ![](https://github.com/xtzPioneer/TXRouter/raw/master/组件化管理工具.gif)
+
 
 
