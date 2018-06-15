@@ -21,7 +21,7 @@
     self.title=@"TX路由工具";
     
     CGFloat viewW=self.view.frame.size.width;
-   
+    
     CGFloat spacing=20;
     CGFloat buttonH=30;
     CGFloat buttonX=spacing;
@@ -74,30 +74,25 @@
         case 1:{
             NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
             [dic setValue:@"hello world" forKey:@"title"];
-            UIViewController *viewController = [[TXRouter routerManager] createObjectWithClassName:@"TXTest1ViewController" parameters:dic];
-            if (viewController) {
-                [self.navigationController pushViewController:viewController animated:YES];
-            }
+            [dic setValue:self.navigationController forKey:@"navigationController"];
+            [TXRouter openVC:@"TXTest1ViewController" parameters:dic];
         }
             break;
         case 2:{
             NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
             [dic setValue:@"hello world" forKey:@"title"];
-            UIViewController *viewController = [[TXRouter routerManager] createObjectWithClassName:@"TXTest2ViewController" parameters:dic];
-            if (viewController) {
-                [self presentViewController:viewController animated:YES completion:nil];
-            }
+            [dic setValue:self forKey:@"viewController"];
+            [TXRouter openVC:@"TXTest2ViewController" parameters:dic];
         }
             break;
         case 3:{
             NSMutableDictionary * dic = [[NSMutableDictionary alloc] init];
             [dic setValue:@"https://www.baidu.com" forKey:@"url"];
             [dic setValue:@"百度一下" forKey:@"title"];
-            UIViewController *viewController = [[TXRouter routerManager] createObjectWithClassName:@"TXTestWebViewController" parameters:dic];
-            if (viewController) {
-                [self.navigationController pushViewController:viewController animated:YES];
-            }
-            
+            [dic setValue:self.navigationController forKey:@"navigationController"];
+            [TXRouter openVC:@"TXTestWebViewController" parameters:dic completionHandler:^(NSError *error, UIViewController *viewController) {
+                NSLog(@"error:%@---->:%@",error,viewController);
+            }];
         }
             break;
         case 5:{
@@ -110,19 +105,15 @@
                 NSLog(@"从VC3中获取的数据是===>%@",msg);
             };
             [dic setObject:textBlock forKey:@"block"];
-            
-            UIViewController *viewController = [[TXRouter routerManager] createObjectWithClassName:@"TXTest3ViewController" parameters:dic];
-            if (viewController) {
-                [self presentViewController:viewController animated:YES completion:nil];
-            }
+            [dic setValue:self.navigationController forKey:@"viewController"];
+            [TXRouter openVC:@"TXTest3ViewController" parameters:dic];
             
         }
             break;
         case 4:{
-            UIViewController * viewController = [[TXRouter routerManager] createObjectWithClassName:@"TXUnknowvc" parameters:nil];
-            if (viewController) {
-                [self presentViewController:viewController animated:YES completion:nil];
-            }
+            NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+            [dic setValue:self forKey:@"viewController"];
+            [TXRouter openVC:@"测试" parameters:dic];
             
         }
         default:
@@ -136,3 +127,4 @@
 
 
 @end
+

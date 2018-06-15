@@ -14,8 +14,9 @@
 		5556AD7E20BEA55E007C8C10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556AD7D20BEA55E007C8C10 /* main.m */; };
 		5556AD8820BEA55E007C8C10 /* TXRouterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556AD8720BEA55E007C8C10 /* TXRouterDemoTests.m */; };
 		5556AD9320BEA55E007C8C10 /* TXRouterDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556AD9220BEA55E007C8C10 /* TXRouterDemoUITests.m */; };
-		5556ADA320BEA597007C8C10 /* TXRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556ADA220BEA597007C8C10 /* TXRouter.m */; };
 		5556ADAF20BEA5B9007C8C10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556ADA920BEA5B9007C8C10 /* ViewController.m */; };
+		55B255E020D385A7006A68E2 /* TXCreateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B255DD20D385A6006A68E2 /* TXCreateObject.m */; };
+		55B255E120D385A7006A68E2 /* TXRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B255DE20D385A6006A68E2 /* TXRouter.m */; };
 		6C2ACF8BA56EA53CD17F96E1 /* libPods-TXRouterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0897BE7A841E3F83397955C4 /* libPods-TXRouterDemo.a */; };
 		9719100D344314BD1AB762B1 /* libPods-TXRouterDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7B9BE2689A200DC4911A5 /* libPods-TXRouterDemoUITests.a */; };
 		C0B1AC7A8FCBBAC8A03483FB /* libPods-TXRouterDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD45905C6DFAE13C496A456 /* libPods-TXRouterDemoTests.a */; };
@@ -57,10 +58,12 @@
 		5556AD8E20BEA55E007C8C10 /* TXRouterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXRouterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5556AD9220BEA55E007C8C10 /* TXRouterDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXRouterDemoUITests.m; sourceTree = "<group>"; };
 		5556AD9420BEA55E007C8C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5556ADA120BEA597007C8C10 /* TXRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXRouter.h; sourceTree = "<group>"; };
-		5556ADA220BEA597007C8C10 /* TXRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXRouter.m; sourceTree = "<group>"; };
 		5556ADA920BEA5B9007C8C10 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5556ADAD20BEA5B9007C8C10 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		55B255DC20D385A6006A68E2 /* TXCreateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXCreateObject.h; sourceTree = "<group>"; };
+		55B255DD20D385A6006A68E2 /* TXCreateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXCreateObject.m; sourceTree = "<group>"; };
+		55B255DE20D385A6006A68E2 /* TXRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXRouter.m; sourceTree = "<group>"; };
+		55B255DF20D385A7006A68E2 /* TXRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXRouter.h; sourceTree = "<group>"; };
 		5767491BDE55A96CC77661F5 /* Pods-TXRouterDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXRouterDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TXRouterDemoUITests/Pods-TXRouterDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7E508B7F265FC05C649D12BC /* Pods-TXRouterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXRouterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TXRouterDemo/Pods-TXRouterDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AABE208BE689B4D286668CEB /* Pods-TXRouterDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXRouterDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TXRouterDemoTests/Pods-TXRouterDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,8 +159,10 @@
 		5556ADA020BEA597007C8C10 /* TXRouter */ = {
 			isa = PBXGroup;
 			children = (
-				5556ADA120BEA597007C8C10 /* TXRouter.h */,
-				5556ADA220BEA597007C8C10 /* TXRouter.m */,
+				55B255DC20D385A6006A68E2 /* TXCreateObject.h */,
+				55B255DD20D385A6006A68E2 /* TXCreateObject.m */,
+				55B255DF20D385A7006A68E2 /* TXRouter.h */,
+				55B255DE20D385A6006A68E2 /* TXRouter.m */,
 			);
 			path = TXRouter;
 			sourceTree = "<group>";
@@ -376,8 +381,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5556AD7E20BEA55E007C8C10 /* main.m in Sources */,
-				5556ADA320BEA597007C8C10 /* TXRouter.m in Sources */,
 				5556AD7020BEA55C007C8C10 /* AppDelegate.m in Sources */,
+				55B255E120D385A7006A68E2 /* TXRouter.m in Sources */,
+				55B255E020D385A7006A68E2 /* TXCreateObject.m in Sources */,
 				5556ADAF20BEA5B9007C8C10 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,7 +557,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSMJ24QAA8;
 				INFOPLIST_FILE = TXRouterDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -566,7 +575,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSMJ24QAA8;
 				INFOPLIST_FILE = TXRouterDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -581,7 +593,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSMJ24QAA8;
 				INFOPLIST_FILE = TXRouterDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -597,7 +613,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSMJ24QAA8;
 				INFOPLIST_FILE = TXRouterDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -612,7 +632,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSMJ24QAA8;
 				INFOPLIST_FILE = TXRouterDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -627,7 +651,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSMJ24QAA8;
 				INFOPLIST_FILE = TXRouterDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtz.TXRouterDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
