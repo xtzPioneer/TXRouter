@@ -12,7 +12,7 @@
 #if DEBUG
 #define TXCOLog(s, ... ) NSLog( @"<FileName:%@ InThe:%d Line> Log:%@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 #else
-#define TXCRLog(s, ... )
+#define TXCOLog(s, ... )
 #endif
 
 /*处理完成回调*/
