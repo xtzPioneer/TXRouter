@@ -92,9 +92,11 @@ NSString * const classNameKey = @"className";
                 [parameters setValue:className forKey:classNameKey];
                 SuppressPerformSelectorLeakWarning([obj performSelector:selector withObject:parameters]);
             }else{
+                //注意:深拷贝和浅拷贝
+                parameters=[parameters mutableCopy];
                 [parameters setValue:className forKey:classNameKey];
+                SuppressPerformSelectorLeakWarning( [obj performSelector:selector withObject:parameters]);
             }
-            SuppressPerformSelectorLeakWarning( [obj performSelector:selector withObject:parameters]);
             if (completionHandler) completionHandler(nil,obj);
         }
     }
@@ -103,8 +105,10 @@ NSString * const classNameKey = @"className";
     __block id object = nil;
     [self createObjectWithClassName:className parameters:parameters completionHandler:^(NSError *error, id obj) {
         object=obj;
+        if (error) TXCOLog(@"%@",error.userInfo[@"message"]);
     }];
     return object;
 }
 
 @end
+
