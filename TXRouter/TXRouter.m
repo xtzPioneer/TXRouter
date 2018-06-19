@@ -45,7 +45,6 @@ NSString * const rNavVC = @"navigationController";
     __block UIViewController * vc=nil;
     [TXRouter createVCWithVCName:vCName completionHandler:^(NSError *error, UIViewController *viewController) {
         vc=viewController;
-        if (error) TXCOLog(@"%@",error.userInfo[@"message"]);
     }];
     return vc;
 }
@@ -66,7 +65,6 @@ NSString * const rNavVC = @"navigationController";
     __block UIViewController * vc=nil;
     [TXRouter createVCWithVCName:vCName parameters:parameters completionHandler:^(NSError *error, UIViewController *viewController) {
         vc=viewController;
-        if (error) TXCOLog(@"%@",error.userInfo[@"message"]);
     }];
     return vc;
 }
@@ -130,7 +128,6 @@ NSString * const rNavVC = @"navigationController";
 
 + (void)openVC:(NSString*)vCName parameters:(NSDictionary *)parameters{
     [[TXRouter routerManager] openVC:vCName parameters:parameters completionHandler:^(NSError *error, UIViewController *viewController) {
-        if (error) TXCOLog(@"%@",error.userInfo[@"message"]);
     }];
 }
 

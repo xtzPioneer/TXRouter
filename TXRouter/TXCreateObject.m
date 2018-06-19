@@ -103,7 +103,6 @@ NSString * const classNameKey = @"className";
     __block id object = nil;
     [self createObjectWithClassName:className parameters:parameters completionHandler:^(NSError *error, id obj) {
         object=obj;
-        if (error) TXCOLog(@"%@",error.userInfo[@"message"]);
     }];
     return object;
 }
