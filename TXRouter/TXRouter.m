@@ -21,6 +21,15 @@ NSString * const rNavVC = @"navigationController";
     });
     return routerManager;
 }
++ (id)allocWithZone:(NSZone *)zone{
+    return [TXRouter routerManager];
+}
+- (id)copyWithZone:(NSZone *)zone{
+    return [TXRouter routerManager];
+}
+- (id)mutableCopyWithZone:(NSZone *)zone{
+    return [TXRouter routerManager];
+}
 
 /**
  * 创建视图控制器
