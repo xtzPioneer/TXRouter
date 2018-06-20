@@ -74,14 +74,14 @@
         case 1:{
             NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
             [dic setValue:@"hello world" forKey:@"title"];
-            [dic setValue:self.navigationController forKey:@"navigationController"];
+            [dic setValue:self.navigationController forKey:viewControllerKey];
             [TXRouter openVC:@"TXTest1ViewController" parameters:dic];
         }
             break;
         case 2:{
             NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
             [dic setValue:@"hello world" forKey:@"title"];
-            [dic setValue:self forKey:@"viewController"];
+            [dic setValue:self forKey:viewControllerKey];
             [TXRouter openVC:@"TXTest2ViewController" parameters:dic];
         }
             break;
@@ -89,10 +89,8 @@
             NSMutableDictionary * dic = [[NSMutableDictionary alloc] init];
             [dic setValue:@"https://www.baidu.com" forKey:@"url"];
             [dic setValue:@"百度一下" forKey:@"title"];
-            [dic setValue:self.navigationController forKey:@"navigationController"];
-            [TXRouter openVC:@"TXTestWebViewController" parameters:dic completionHandler:^(NSError *error, UIViewController *viewController) {
-                NSLog(@"error:%@---->:%@",error,viewController);
-            }];
+            [dic setValue:self.navigationController forKey:viewControllerKey];
+            [TXRouter openVC:@"TXTestWebViewController" parameters:dic];
         }
             break;
         case 5:{
@@ -105,15 +103,19 @@
                 NSLog(@"从VC3中获取的数据是===>%@",msg);
             };
             [dic setObject:textBlock forKey:@"block"];
-            [dic setValue:self.navigationController forKey:@"viewController"];
-            [TXRouter openVC:@"TXTest3ViewController" parameters:dic];
+            [dic setValue:self forKey:@"viewController"];
+            [TXRouter openVC:@"TXTest3ViewController" parameters:dic completionHandler:^{
+                NSLog(@"打开成功");
+            }];
             
         }
             break;
         case 4:{
             NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
             [dic setValue:self forKey:@"viewController"];
-            [TXRouter openVC:@"测试" parameters:dic];
+            [TXRouter openVC:@"测试" parameters:dic completionHandler:^{
+                NSLog(@"打开成功");
+            }];
             
         }
         default:
